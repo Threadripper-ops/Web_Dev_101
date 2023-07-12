@@ -13,12 +13,20 @@
 
       .search-bar{
         font-size: 20px;
+        display: block;
         
 
       }
 
       .video-title{
         width: 300px;
+      }
+     
+      .video-preview{  
+         width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
       }
 
       
@@ -31,27 +39,65 @@
   <body>
     <input class = "search-bar" type="text" placeholder="Search">
     
-    <img class ="thumbnail"src ="thumbnails/thumbnail-1.webp">
+  
+
+    <div class="video-preview">
+      <img class ="thumbnail"src ="thumbnails/thumbnail-1.webp">
     
-    <p class= "Video-title">
-      Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
+      <p class= "Video-title">
+        Talking Tech and AI with Google CEO Sundar Pichai!
+      </p>
+  
+      <p class = "video-author">
+        Marques Brownlee
+      </p>
+  
+      <p class = 'video-stats'>
+        3.4M views &#183 6 months ago
+      </p>
 
-    <p class = "video-author">
-      Marques Brownlee
-    </p>
+    </div>
+    <div class="video-preview">
+      <img class ="thumbnail"src ="thumbnails/thumbnail-2.webp">
+    
+      <p class= "Video-title">
+        Try Not To Laugh Challenge #9
+      </p>
+  
+      <p class = "video-author">
+        Markiplier
+      </p>
+  
+      <p class = 'video-stats'>
+        19M views &#183; 4 years ago
+      </p>
 
-    <p class = 'video-stats'>
-      3.4M views &#183 6 months ago
-    </p>
+    </div>
+    
 
 
   </body>
 </HTML>
 
+<!--
+The div element - it is basically just a box /containers
 
+that you can put other elements inside of it.
 
+it contains many attributes
+1. class: it specifies the class of the element
 
+it can contain many elements like img text 
+and other div elements
+ 
+div is basically almost everywhere in real world websites
+-->
+
+<!--
+
+  Block elements take up the entire line in thier container
+
+-->
 
 
 
