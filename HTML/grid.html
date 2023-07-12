@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Grid Practice </title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <!-- <div style="
+      display: grid;
+      grid-template-columns: 100px 100px
+      ">
+    <div style="background-color: lightblue;">
+      div 1
+    </div>
+    <div style="background-color: antiquewhite;">
+      div 2<p>
+        text
+      </p>
+      </div>
+      </div>
+
+
+
+
+        <div style="
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+        margin-top : 30px;
+
+        ">
+      <div style="background-color: lightblue;">
+        div 1
+      </div>
+      <div style="background-color: antiquewhite;">
+        div 2<p>
+          text
+        </p>
+        </div>
+        <div style="background-color: rgb(45, 223, 45);">
+          div 3
+        </div>
+        <div style="background-color: antiquewhite;">
+          div 2
+          </div>
+        </div>
+
+
+
+        <div style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 100px 1fr;
+
+        ">
+      <div style="background-color: lightblue;">
+        100px
+      </div>
+      <div style="background-color: antiquewhite;">
+        1fr
+        </div>
+        </div>
+
+
+        <div style="
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 100px 1fr 2fr;
+
+        ">
+      <div style="background-color: lightblue;">
+        100px
+      </div>
+      <div style="background-color: antiquewhite;">
+        1fr
+        </div>
+        <div style="background-color: rgb(45, 223, 45);">
+          2fr
+        </div>
+        </div> -->
+
+
+
+          <div style="
+          display: grid;
+          margin-top: 30px;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 10px;
+          row-gap: 50px;
+
+          ">
+        <div style="background-color: lightblue;
+        height: 200px;">
+          1fr
+        </div>
+        <div style="background-color: antiquewhite;">
+          1fr
+          </div>
+          <div style="background-color: rgb(45, 223, 45);">
+            1fr
+          </div>
+          <div style="background-color: rgb(45, 223, 45);">
+            1fr
+          </div>
+          
+            <div style="background-color: lightblue;
+        height: 200px;">
+          1fr
+        </div>
+        <div style="background-color: antiquewhite;">
+          1fr
+          </div>
+            
+          </div>
+
+  </body>
+</html>
+
+
+
+
+
+<!--
+
+  Grid  
+  it is a layout system consisting of rows and columns
+  Represented as
+  Row*Column
+
+
+  to add grid use 
+  display:grid;
+
+grid maintains alingnments much proper
+
+to add rows and columns use
+grid-template-columns: 100px 100px 100px;
+grid-template-rows: 100px 100px 100px;
+this will create 3 rows and 3 columns
+
+to add gap between rows and columns use
+grid-gap: 10px 10px;
+
+Whenever you have more elements  than the no of 
+columns 
+then the extra element will be placed in the next row
+
+fr(free space) in grid-template-columns: 100px 1fr;
+means that the column will take the remaining  free space
+
+
+Represented as 
+
+Xfr
+here fr tells to take the remaining space
+
+and the number before fr tells extactly how much of the 
+remaining space to take when there are multiple fr s
+
+eg 
+1fr 1fr
+here both the columns will take half of the remaining space
+
+2fr 1fr
+here the first column will take 2/3 of the remaining space
+ 
+
+caluclation of fr is done as follows
+
+xfr y fr zfr say 
+
+then space taken by xfr is calculated as follows
+x/(x+y+z) * total space
+-->

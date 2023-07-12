@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        font-family:arial;
+      }
+      div{
+        width: 300px;
+        margin: 15px;
+        width: 300px;
+        display: inline-block;
+
+      }
+      .e{
+        text-align: center;
+        
+      }
+
+      .new{
+        font-size: 12px;
+        color: rgb(182, 107, 14);
+        margin-bottom: 0px;
+        font-weight: bold;
+      
+      }
+      .name{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        margin-top: 5px;
+        margin-bottom: 0px;
+        opacity: 0.7;
+      }
+      .description{
+        font-size: 27px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .price{
+        font-size: 13px;
+        font-weight: lighter;
+        opacity: 0.6;
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+      .butA{
+        color: white;
+        background-color: rgb(51, 134, 250);
+        padding: 5px;
+        font-size: 13px;
+        border-radius: 50px;
+        padding-left: 13px;
+        padding-right: 13px;
+        margin-top: 30px;
+      
+      }
+
+      .fa{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .usd{
+        font-size: 15px;
+        font-weight: lighter;
+        opacity: 0.6;
+      }
+      .fb{
+        font-size: 15px;
+        font-weight: lighter;
+        color: seagreen;
+        margin-bottom: 0px;
+        margin-top: 4px;
+      }
+      .fc{
+        font-size: 15px;
+        font-weight: lighter;
+        color: rgb(0, 0, 0);
+        opacity: 0.7;
+        margin-top: 8px;
+      }
+      .red{
+        color: red;
+        
+        
+      }
+      .blue{
+        color: rgb(1, 182, 285);
+      }
+      .ga{
+        font-weight: bold;
+      }
+
+
+
+</style>
+
+  </head>
+  <body>
+    <div class="e">
+      <p class="new">
+        New
+      </p>
+      <p class="name">
+        Macbook Pro
+      </p>
+      <p class="description">
+        Supercharged for pros.
+      </p>
+      <p class="price">
+        From $1999
+
+      </p>
+      <butoon class="butA">
+        Buy
+      </butoon>
+  
+    </div>
+
+    <div class="f">
+      <p class="fa">
+        1,049.61<span class="usd"> USD</span>
+      </p>
+      <p class="fb">
+        +18.05(1.75%) today
+      </p>
+      <p class="fc">
+        After hours: 1,049.61 <span class="red">
+          -1.61(-0.15%)</span>
+        </span>
+      </p>
+    </div>
+
+    <div class="g">
+      <p class="ga">
+      freeCodeCamp.org <span class="usd"> @freeCodeCamp 1h</span>
+      </p>
+      <p class="gb">
+        As a web developer, you'll want to make your projects easy to use and navigate around.
+      </p>
+      <p class="fc">
+        Here  <span class="blue">
+          @chp_it </span>outlines the top skills new developers should have.
+        </span>
+      </p>
+  </body>
+</html>
