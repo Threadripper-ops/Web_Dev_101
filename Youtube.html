@@ -15,38 +15,16 @@
 
     <style>
 
-     .header{
-      height:55px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+     .sidebar{
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      top: 55px;
+      width: 72px;
+      background-color: white;
       
 
      }
-
-     .left-section{
-      background-color: aquamarine;
-      width: 150px;
-      margin-left: 70px;
-      
-     }
-     .middle-section{
-      background-color: lightpink;
-      flex: 1;
-      max-width: 500px;
-      margin-right: 35px;
-     }
-
-     .right-section{
-       background-color: lightblue;
-       width: 200px;
-
-     }
-    
-
-      
-
-      
 
     </style>
 
@@ -55,21 +33,37 @@
     
     <div class="header">
       <div class="left-section">
-        left
+        
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
 
       </div>
       <div class="middle-section">
         <input class = "search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class= "search-icon"src="icons/search.svg">
+        </button>
+        <button  class="voice-button">
+          <img class="voice-icon" src="icons/voice-search-icon.svg">
+        </button>
 
       </div>
 
       <div class="right-section">
-        right
+        <img class="upload-icon" src="icons/upload.svg">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <img class="notification-icon" src="icons/notifications.svg">
+        <img class="profile-picture-icon" src="icons/my-channel.jpeg">
 
       </div>
 
 
       
+    </div>
+
+    <div class="sidebar">
+sidebar
+
     </div>
     
    
@@ -266,6 +260,12 @@ One Can Solve - Collatz...
 
   </body>
 </HTML>
+
+
+<!-- negative margin is used to move the element in the opposite direction of the margin
+
+ -->
+
 
 
 
