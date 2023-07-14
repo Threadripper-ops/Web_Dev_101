@@ -5,4 +5,8 @@ p{
 }
 body{
   margin: 0px;
+  padding-top: 80px;
+  padding-left: 95px;
+  background-color: whitesmoke;
+  height: 1500px;
 }

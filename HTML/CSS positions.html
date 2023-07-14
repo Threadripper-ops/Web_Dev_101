@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+ <html>
+  <head> 
+
+  </head>
+  <body style="height: 30000px;
+  padding-top: 60px;
+  padding-left: 64px;">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      height: 50px;
+      
+      z-index: 1;
+      ">
+
+      header
+    </div>
+
+    <div style="
+    background-color: greenyellow;
+    position: fixed;
+    left : 0px;
+    top: 50px;
+    bottom:0;
+    width: 72px;
+
+    ">
+      sidebar
+      <div style="
+      position: absolute;
+      background-color: brown;
+      color: white;
+      z-index: 2;
+      top: 60px;
+      right: 10px;
+      
+      
+      ">
+    
+    
+        absolute
+      </div>
+  </div>
+
+
+  <div style="
+  position: absolute;
+  background-color: brown;
+  color: white;
+  z-index: 2;
+  top: 60px;
+  right: 10px;
+  
+  
+  ">
+
+
+    absolute
+  </div>
+    <div style="background-color: rgb(151, 206, 255);
+    height:200PX;
+    width:200px;
+position: static;
+
+    ">
+div1
+    </div>
+<div style="background-color: lightcoral;
+height: 200px;
+width : 200px;">
+  div2
+</div>
+
+  </body>
+ </html>
+
+
+
+ <!-- 
+  postion in css is used to position elements in a webpage
+  1. static: default value
+ 
+  2. relative: it is relative to its normal position i.e if we give top: 20px
+            it will move 20px from its normal position
+  
+  3. fixed: it makes the element to float above the webpage i.e its postion 
+            wont change even if we scroll
+            here elements is placed abve the page or in the browser window
+
+  4. absolute: it places elements relative to its parent element i.e if we give top: 20px
+            it will move 20px from its parent element      
+            here elements is placed on the page so it moves when we scroll
+
+
+
+
+
+             top and bottom are used to move the element vertically basically it sets width 
+             from the top and bottom of the parent element
+             similarly left and right are used to move the element horizontally basically it sets width
+              from the left and right of the parent element
+
+              and if we give top and bottom or left and right both then the element will be stretched
+
+
+              also depending on use case we can use height and width or top ,bottom and left-right 
+              i.e. if we want to move the elwment with the parent element then we use top,bottom,left,right
+              and if we want to make the elwment fixed then we use height and width
+
+
+
+
+
+
+              Z-index: it is used to set the order of the elements i.e. which element will be on top
+              by default the order is set by the order of the elements in the html file
+
+
+              elements with higher z-index will appear in front of elements w
+              with lower z-index.
+-->
