@@ -1,268 +1,346 @@
-<!DOCTYPE html>
-<HTML>
-  <head>
+        <!DOCTYPE html>
+        <HTML>
+          <head>
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Youtube Clone</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+            <title>Youtube Clone</title>
 
-    <link rel="stylesheet" href="project css/general.css">
-    <link rel="stylesheet" href="project css/header.css">
-    <link rel="stylesheet" href="project css/video.css">
-
-
-    <style>
-
-     .sidebar{
-      position: fixed;
-      left: 0px;
-      bottom: 0px;
-      top: 55px;
-      width: 72px;
-      background-color: white;
-      
-
-     }
-
-    </style>
-
-  </head>
-  <body>
-    
-    <div class="header">
-      <div class="left-section">
-        
-        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
-        <img class="youtube-logo" src="icons/youtube-logo.svg">
-
-      </div>
-      <div class="middle-section">
-        <input class = "search-bar" type="text" placeholder="Search">
-        <button class="search-button">
-          <img class= "search-icon"src="icons/search.svg">
-        </button>
-        <button  class="voice-button">
-          <img class="voice-icon" src="icons/voice-search-icon.svg">
-        </button>
-
-      </div>
-
-      <div class="right-section">
-        <img class="upload-icon" src="icons/upload.svg">
-        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-        <img class="notification-icon" src="icons/notifications.svg">
-        <img class="profile-picture-icon" src="icons/my-channel.jpeg">
-
-      </div>
+            <link rel="stylesheet" href="project css/general.css">
+            <link rel="stylesheet" href="project css/header.css">
+            
+            <link rel="stylesheet" href="project css/video.css">
+            <link rel="stylesheet" href="project css/sidebar.css">
 
 
-      
-    </div>
+            
 
-    <div class="sidebar">
-sidebar
+          </head>
+          <body>
+            
+              <header class="header">
+                <div class="left-section">
+                  
+                  <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+                  <img class="youtube-logo" src="icons/youtube-logo.svg">
 
-    </div>
-    
-   
-    <div class="video-grid">
+                </div>
+                <div class="middle-section">
+                  <input class = "search-bar" type="text" placeholder="Search">
+                  <button class="search-button">
+                    <img class= "search-icon"src="icons/search.svg">
+                    <div class="tool-tip">
+                      Search
+                    </div>
+                  </button>
+                  <button  class="voice-button">
+                    <img class="voice-icon" src="icons/voice-search-icon.svg">
+                    <div class="tool-tip">
+                      Search with your voice
+                    </div>
+                  </button>
 
-    <div class="video-preview">
+                </div>
 
-      <div class="thumbnail-row">
-      <img class ="thumbnail"src ="thumbnails/thumbnail-1.webp">
-    
-     </div>
+                <div class="right-section">
+                  <div class="upload-icon-container">
+                  <img class="upload-icon" src="icons/upload.svg">
+                  <div class="tool-tip">
+                    Create
+                  </div>
+                  </div>
+                  <div class="youtube-apps-icon-container">
+                  <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                  <div class="tool-tip">
+                    Youtube apps
+                  </div>
+                  </div>
+                <div class="notification-icon-container">
+                  <img class="notification-icon" src="icons/notifications.svg">
+                  <div class="tool-tip">
+                  Notifications
+                  </div>
+                  <div class="notification-count">
+                    3
+                  </div>
+                </div>
+                  <img class="profile-picture-icon" src="icons/my-channel.jpeg">
 
-    <div class="video-info-grid">
+                </div>
 
 
-  <div class="channel-picture">
-  <img class="profile-picture" src="profile-picture/channel-1.jpeg">
-  </div>
-    
-  <div class="video-info">
-  <p class= "video-title">
-    Talking Tech and AI with Google CEO Sundar Pichai!
-  </p>
+                
+              </header>
 
-  <p class = "video-author">
-    Marques Brownlee
-  </p>
+              <nav class="sidebar">
 
-  <p class = 'video-stats'>
-    3.4M views &#183 6 months ago
-  </p>
-   </div>
-   </div>
-   </div>
-   
-    
-   
-   <div class="video-preview">
-    <div class="thumbnail-row">
-    <img class ="thumbnail"src ="thumbnails/thumbnail-2.webp">
+          <div class="sidebar-link">
+                <img  src="icons/home.svg">
+                <div >
+                  Home
+                </div>
+
+          </div>
+          <div class="sidebar-link">
+                <img  src="icons/explore.svg">
+                <div >
+                  Explore
+                </div>
+          </div>
+          <div class="sidebar-link">
+            <img  src="icons/subscriptions.svg">
+            <div >
+              Subscription
+            </div>
+          </div>
+          <div class="sidebar-link">
+            <img  src="icons/originals.svg">
+            <div>
+              Originals
+            </div>
+          </div>
+          <div class="sidebar-link">
+            <img  src="icons/youtube-music.svg">
+            <div>
+              Youtube Music
+            </div>
+          </div>
+          <div class="sidebar-link">
+            <img  src="icons/library.svg">
+            <div>
+              Library
+            </div>
+          </div>
+
+
+        </nav>
+              
+            <main>
+              <section class="video-grid">
+
+              <div class="video-preview">
+
+                <div class="thumbnail-row">
+                  <a href="https://youtu.be/n2RNcPRtAiY">
+                <img class ="thumbnail"src ="thumbnails/thumbnail-1.webp" >
+                </a>
+                <div class="video-time">
+                  14:20
+
+                </div>
+              
+              </div>
+
+              <div class="video-info-grid">
+
+
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/c/mkbhd">
+            <img class="profile-picture" src="profile-picture/channel-1.jpeg">
+            </a>
+            </div>
+              
+            <div class="video-info">
+              <a href="https://youtu.be/n2RNcPRtAiY">
+            <p class= "video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            </a>
+
+            <a href="https://www.youtube.com/c/mkbhd">
+
+            <p class = "video-author">
+              Marques Brownlee
+            </p>
+            </a>
+
+            <p class = 'video-stats'>
+              3.4M views &#183 6 months ago
+            </p>
+            </div>
+            </div>
+            </div>
+            
+              
+            
+            <div class="video-preview">
+              <div class="thumbnail-row">
+              <img class ="thumbnail"src ="thumbnails/thumbnail-2.webp">
+              <div class="video-time">
+                8:22
+
+              </div>
+            </div>
+            <div class="video-info-grid">
+            
+              <div class="channel-picture">
+            <img class="profile-picture" src="profile-picture/channel-2.jpeg">
+            </div>
+            
+              <div class="video-info">
+
+              <p class= "video-title">
+                Try Not To Laugh Challenge #9
+              </p>
+
+              <p class = "video-author">
+                Markiplier
+              </p>
+
+              <p class = 'video-stats'>
+                19M views &#183; 4 years ago
+              </p>
+
+            </div>
+          </div>
+          </div>
+
+
+          <div class="video-preview">
+            <div class="thumbnail-row">
+            <img class ="thumbnail"src ="thumbnails/thumbnail-3.webp">
+            <div class="video-time">
+              9:13
+
+            </div>
+          </div>
+          <div class="video-info-grid">
+
+            <div class="channel-picture">
+          <img class="profile-picture" src="profile-picture/channel-3.jpeg">
+          </div>
+
+            <div class="video-info">
+
+            <p class= "video-title">
+              Crazy Tik Toks Taken Moments
+              Before DISASTER
+            </p>
+
+            <p class = "video-author">
+              SSSniperWolf
+            </p>
+
+            <p class = 'video-stats'>
+              12M views &#183; 1 years ago
+            </p>
+
+          </div>
+          </div>
+          </div>
+
+
+
+          <div class="video-preview">
+            <div class="thumbnail-row">
+            <img class ="thumbnail"src ="thumbnails/thumbnail-4.webp">
+            <div class="video-time">
+              14:20
+
+            </div>
+          </div>
+          <div class="video-info-grid">
+
+            <div class="channel-picture">
+          <img class="profile-picture" src="profile-picture/channel-4.jpeg">
+          </div>
+
+            <div class="video-info">
+
+            <p class= "video-title">
+              The Simplest Math Problem No
+          One Can Solve - Collatz...
+            </p>
+
+            <p class = "video-author">
+              Veritasium
+            </p>
+
+            <p class = 'video-stats'>
+              18M views &#183; 4 months ago
+            </p>
+
+          </div>
+          </div>
+          </div>
+
+
+          <div class="video-preview">
+            <div class="thumbnail-row">
+            <img class ="thumbnail"src ="thumbnails/thumbnail-5.webp">
+            <div class="video-time">
+              14:20
+
+            </div>
+          </div>
+          <div class="video-info-grid">
+
+            <div class="channel-picture">
+          <img class="profile-picture" src="profile-picture/channel-5.jpeg">
+          </div>
+
+            <div class="video-info">
+
+            <p class= "video-title">
+              Kadane's Algorithm to Maximum
+              Sum Subarray Problem
+            </p>
+
+            <p class = "video-author">
+              CS Doio
+            </p>
+
+            <p class = 'video-stats'>
+              519k views &#183; 5 years ago
+            </p>
+
+          </div>
+          </div>
+          </div>
+
+          <div class="video-preview">
+            <div class="thumbnail-row">
+            <img class ="thumbnail"src ="thumbnails/thumbnail-6.webp">
+            <div class="video-time">
+              14:20
+
+            </div>
+          </div>
+          <div class="video-info-grid">
+
+            <div class="channel-picture">
+          <img class="profile-picture" src="profile-picture/channel-6.jpeg">
+          </div>
+
+            <div class="video-info">
+
+            <p class= "video-title">
+              Anything You Can Fit In The Circle I'II Pay For
+            </p>
+
+            <p class = "video-author">
+              MrBeast
+            </p>
+
+            <p class = 'video-stats'>
+              141M views &#183; 1 years ago
+            </p>
+
+               </div>
+              </div>
+             </div>
+            </section>
+
+            </main>
+          </body>
+          </HTML>
+
+
+<!-- 
   
-  </div>
-  <div class="video-info-grid">
-  
-     <div class="channel-picture">
-  <img class="profile-picture" src="profile-picture/channel-2.jpeg">
-  </div>
-  
-    <div class="video-info">
-
-    <p class= "video-title">
-      Try Not To Laugh Challenge #9
-    </p>
-
-    <p class = "video-author">
-      Markiplier
-    </p>
-
-    <p class = 'video-stats'>
-      19M views &#183; 4 years ago
-    </p>
-
-  </div>
- </div>
-</div>
-
-
-<div class="video-preview">
-  <div class="thumbnail-row">
-  <img class ="thumbnail"src ="thumbnails/thumbnail-3.webp">
-
-</div>
-<div class="video-info-grid">
-
-   <div class="channel-picture">
-<img class="profile-picture" src="profile-picture/channel-3.jpeg">
-</div>
-
-  <div class="video-info">
-
-  <p class= "video-title">
-    Crazy Tik Toks Taken Moments
-    Before DISASTER
-  </p>
-
-  <p class = "video-author">
-    SSSniperWolf
-  </p>
-
-  <p class = 'video-stats'>
-    12M views &#183; 1 years ago
-  </p>
-
-</div>
-</div>
-</div>
-
-
-
-<div class="video-preview">
-  <div class="thumbnail-row">
-  <img class ="thumbnail"src ="thumbnails/thumbnail-4.webp">
-
-</div>
-<div class="video-info-grid">
-
-   <div class="channel-picture">
-<img class="profile-picture" src="profile-picture/channel-4.jpeg">
-</div>
-
-  <div class="video-info">
-
-  <p class= "video-title">
-    The Simplest Math Problem No
-One Can Solve - Collatz...
-  </p>
-
-  <p class = "video-author">
-    Veritasium
-  </p>
-
-  <p class = 'video-stats'>
-    18M views &#183; 4 months ago
-  </p>
-
-</div>
-</div>
-</div>
-
-
-<div class="video-preview">
-  <div class="thumbnail-row">
-  <img class ="thumbnail"src ="thumbnails/thumbnail-5.webp">
-
-</div>
-<div class="video-info-grid">
-
-   <div class="channel-picture">
-<img class="profile-picture" src="profile-picture/channel-5.jpeg">
-</div>
-
-  <div class="video-info">
-
-  <p class= "video-title">
-    Kadane's Algorithm to Maximum
-    Sum Subarray Problem
-  </p>
-
-  <p class = "video-author">
-    CS Doio
-  </p>
-
-  <p class = 'video-stats'>
-    519k views &#183; 5 years ago
-  </p>
-
-</div>
-</div>
-</div>
-
-<div class="video-preview">
-  <div class="thumbnail-row">
-  <img class ="thumbnail"src ="thumbnails/thumbnail-6.webp">
-
-</div>
-<div class="video-info-grid">
-
-   <div class="channel-picture">
-<img class="profile-picture" src="profile-picture/channel-6.jpeg">
-</div>
-
-  <div class="video-info">
-
-  <p class= "video-title">
-    Anything You Can Fit In The Circle I'II Pay For
-  </p>
-
-  <p class = "video-author">
-    MrBeast
-  </p>
-
-  <p class = 'video-stats'>
-    141M views &#183; 1 years ago
-  </p>
-
-</div>
-</div>
-</div>
-
-
-
-</div>
-
-
-  </body>
-</HTML>
-
-
-<!-- negative margin is used to move the element in the opposite direction of the margin
+  negative margin is used to move the element in the opposite direction of the margin
 
  -->
 
@@ -383,4 +461,90 @@ to target two class with same property we use comma
   font-family : font a,font b
   here , is used to specify a backup font 
   if the first font is not available then the second font is used
+
+Css selector for image is img
+
+to target any specific element insdie 
+a class we use class name followed by space and then the element name
+
+
+
+in the final project the 
+webpage has a differnt grid layout for different 
+screen size 
+
+to achieve this we use media queries
+
+MEDIA QUERIES
+media queries are used 
+to apply different css styles 
+for different screen sizes
+
+syntax
+@media (max-width: 600px) {
+  body/(target element) {
+    background-color: lightblue;
+    other css adjustments
+  }
+}
+
+
+
+padding is used to add space inside the element
+
+syntax
+padding: vertical(top and botttom) horizontal(left and right);
+or 
+padding: top right bottom left;
+Analogy to remember
+first you start from top
+and then go clockwise around
+
+
+similarly
+
+margin has also the same syntax
+
+
+
+shorthand for border
+
+border: width style color;
+
+
+
+
+INHERITANCE
+
+inheritance is a property of css
+that allows the child element to inherit the property of the parent element
+  however not all the properties are inherited
+  eg- border property.
+inheritance mostly applies to text related properties
+like font-family, font-size, font-weight, color, text-align, text-decoration, etc.
+
+
+but if parent and child both have the same property
+then the child property will override the parent property
+
+this is called css specificity
+
+css specificity is a property of css
+that allows the child element to override the property of the parent element
+  however not all the properties are inherited
+  eg- border property.
+
+ or in simple words
+ more specific takes more priority
+
+
+SEMANCTIC HTML
+semantic html is a property of html
+basically they are similar to div elements
+
+but they have a specific meaning to search engines screen readers and developers
+
+
+eg header, nav, main, section, article, aside, footer, etc.
+
 -->
