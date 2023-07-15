@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<style>
+
+  .pos div{
+    background-color: gray;
+   
+    height: 20px;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    color: white;
+    position: absolute;
+    left: 2px;
+    top: 20px;
+    font-size: 15px;
+   opacity: 0;
+    transition: opacity 0.2s ease-in;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  .pos:hover div{
+    opacity: 1;
+  }
+
+
+
+</style>
+
+<body>
+
+<Button class="pos">
+  <a href="positions.html">Positions</a>
+  <div>
+    Button sdkgdiulfash lksdfgsdiufbsduyasd
+  </div>
+</Button>
+
+
+</div>
+
+
+</body>
+
+
+</html>
+
+<!-- 
+to make a tooltip
+1. make a div
+2. make a class for the div
+3. make a class for the button
+4. make a class for the div inside the button which will contain hover text
+5. make that div to have a position of absolute
+
+6. style the hover text div as you want
+
+7.NOW MAKE THE OPACITY OF THAT DIV TO 0
+8.ADD TRANSITION TO THAT DIV FOR SMOOTH EFFECT
+
+9. NOW defining hover pseudo class we use complex css
+selector
+
+so we want to make that div appear when we hover 
+over the button 
+
+so we use this syntax
+
+.button_class:hover .div_class{
+  opacity: 1;
+}
+
+your tooltip is ready
+
+
+But a problem arises 
+when we hover over the tooltip the hover effect is activated
+so to prevent tooltip from hovering we use this syntax
+
+pointer-events: none;
+
+it bassically sets the pointer event i.e hover to none 
+when the pointer is on the tooltip
+
+
+
+
+YOu notice when the hover text is 
+too long it goes out of the button
+to prevent that we use this syntax
+white-space: nowrap;
+
+it bassically prevents the text from going to the next line
+
+
+NOw to align the tooltip in the center of the button
+we can use flexbox -->

@@ -1,12 +1,21 @@
 p{
-  font-family: Roboto, Arial;
+  
   margin-top: 0px;
   margin-bottom: 0px;
 }
 body{
   margin: 0px;
   padding-top: 80px;
-  padding-left: 95px;
+  padding-left: 96px;
+  padding-right: 24px;
   background-color: whitesmoke;
   height: 1500px;
+  font-family: Roboto,arial;
+
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
 }
