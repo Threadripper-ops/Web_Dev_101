@@ -1,0 +1,33 @@
+body{
+  background-color: rgb(46, 46, 46);
+}
+h1{
+  font-family: Lobster;
+  font-size: 8rem;
+
+}
+h2{
+  font-family: "Indie Flower", cursive;
+  color: #4ECCA3;
+
+
+}
+.container{
+  text-align:  center;
+  width: 70%;
+  margin: auto;
+  color: #4ECCA3;
+  text-shadow: 5px 0px  rgb(42, 42, 42);
+  
+  
+}
+img {
+  width: 80%;
+}
+
+.P1{
+  text-align: center;
+  display: inline-block;
+ 
+}
+
